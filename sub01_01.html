@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    <header class="header_sub">
+        <!-- header.html 자리 -->
+    </header>
+
+    
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                ABOUT COMPANY
+            </div>
+            <div class="bread">
+                <a href="#">HOME</a>
+                <span> > </span>
+                <a href="#">ABOUT COMPANY</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="section_box_sub">
+        
+        <h2>회사소개
+            <span class="top"></span>
+            <span class="right"></span>
+            <span class="bottom"></span>
+            <span class="left"></span>
+        </h2>
+
+        <nav class="snb">
+            <div class="centerbox1200">
+                <ul>
+                    <li class="on"><a href="sub01_01.html">회사 소개</a></li>
+                    <li><a href="sub01_02.html">CEO 인사말</a></li>
+                    <li><a href="#">VISION</a></li>
+                    <li><a href="#">회사 연혁</a></li>
+                    <li><a href="sub01_05.html">오시는 길</a></li>
+                </ul>
+                <span class="snb_line"></span>
+            </div>
+        </nav>
+
+        <article class="content company">
+            <div class="centerbox1200">
+              <div class="text_box">
+                <span class="ex">H.E.L.L.O</span>
+                <strong>완벽을 추구하는<br>
+                결벽증 걸린<br>
+                보안업체입니다.</strong>
+                <p>우리 사장님의 까탈스러운 성격으로 탄생한
+                  보안업체로써 처음엔 모르고 들어왔습니다.
+                  잘못 걸렸다고 생각했지만 고객 입장에선
+                  사장님의 결벽증을 환영하실만한 장점이라 생각이 듭니다.
+                  덕분에 직원 일동도 일취월장하는 실력에 함께 좋아지고
+                  꼼꼼한 성격이 닮아가고 있습니다.
+                  </p>
+              </div>
+
+              <div class="img_box">
+                <figure class="img1">
+                    <img src="images/sub01_01_img1.jpg" alt="">
+                </figure>
+                <figure class="img2">
+                    <img src="images/sub01_01_img2.jpg" alt="">
+                </figure>
+              </div>
+            </div>
+        </article>
+        
+    </div>
+
+
+    <footer></footer>
+
+    <div class="floating_menu sub">
+        <a href="#section1">
+            <i class="fa-regular fa-hourglass-half"></i>
+            <span>출시예정 게임</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <span>BRAND STORY</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>게임문의</span>
+        </a>
+        <a href="#visual">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>TOP</span>
+        </a>
+    </div>
+
+
+
+
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".section2Slide", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,  //브라우저가 769보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
+  </script>
+</body>
+</html>

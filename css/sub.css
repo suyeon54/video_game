@@ -1,0 +1,265 @@
+/* subpage */
+
+
+header.header_sub {position: relative;}
+header.header_sub nav .gnb > li > a {color: #333;}
+header.header_sub nav .spotmenu a {color: #333;}
+
+#visual_sub {height: 180px; background: #000; }
+#visual_sub .centerbox1200 {display: flex; justify-content: center; align-items: center; position: relative; height: 100%;}
+#visual_sub .sub_text {color: #fff; font-size: 40px; letter-spacing: 0.5em; font-family: 'Pretendard-Thin';}
+#visual_sub .bread {position: absolute; bottom: 0; right: 0; height: 40px; display: flex; align-items: center; gap: 15px; padding-right: 20px;}
+#visual_sub .bread a {color: #888;}
+#visual_sub .bread a:hover {color: #fff;}
+#visual_sub .bread span {color: #888;}
+
+.centerbox1200 .sub_text {transform: translate(0,0) skewY(0deg); overflow: hidden; animation: textAni 1.8s; }
+@keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0;transform: translate(0,-90px) skewY(-10deg); }
+    100% {opacity: 1;transform: translate(0,0px) skewY(0deg); }
+}
+
+
+#section_box_sub {display: flex; flex-direction: column; align-items: center; }
+#section_box_sub h2 {font-size: 28px; padding: 16px 50px; margin: 25px 0 50px 0; position: relative;}
+#section_box_sub h2 span {position: absolute; background: red;}
+
+#section_box_sub h2 span.top {top: 0px; left: 0; width: 0; height: 1px; animation: h2Top 1s forwards;}
+@keyframes h2Top {
+    0% {width: 0; height: 1px; left: 0; top: 0;}
+    50% {width: 100%; height: 1px; left: 0; top: 0;}
+    100% {width: 0; height: 1px; left: 100%; top: 0;}
+}
+#section_box_sub h2 span.right {top: 0px; right: 0; width: 0; height: 1px; animation: h2Right 1s forwards; animation-delay: 0.5s;}
+@keyframes h2Right {
+    0% {width: 1px; height: 0; right: 0; top: 0;}
+    50% {width: 1px; height: 100%; right: 0; top: 0;}
+    100% {width: 1px; height: 30%; right: 0; top: 70%;}
+}
+#section_box_sub h2 span.bottom {bottom: 0px; right: 0; width: 0; height: 1px; animation: h2Bottom 1s forwards;}
+@keyframes h2Bottom {
+    0% {width: 0; height: 1px; right: 0; bottom: 0;}
+    50% {width: 100%; height: 1px; right: 0; bottom: 0;}
+    100% {width: 0; height: 1px; right: 100%; bottom: 0;}
+}
+#section_box_sub h2 span.left {bottom: 0px; left: 0; width: 0; height: 1px; animation: h2Left 1s forwards; animation-delay: 0.5s;}
+@keyframes h2Left {
+    0% {width: 1px; height: 0; left: 0; bottom: 0;}
+    50% {width: 1px; height: 100%; left: 0; bottom: 0;}
+    100% {width: 1px; height: 30%; left: 0; bottom: 70%;}
+}
+
+
+#section_box_sub h2::before {content: ""; position: absolute; width: 0; height: 1px; top: 0; left: 0; animation: h2Before 0.5s forwards; background: red; animation-delay: 1s;}
+@keyframes h2Before {
+    0% {width: 0;}
+    100% {width: 20%;}
+}
+#section_box_sub h2::after {content: ""; position: absolute; width: 0; height: 1px; bottom: 0; right: 0; animation: h2After 0.5s forwards; background: red; animation-delay: 1s;}
+@keyframes h2After {
+    0% {width: 0;}
+    100% {width: 20%;}
+}
+
+
+
+#section_box_sub .centerbox1200 {position: relative;}
+#section_box_sub .snb {width: 100%; border-bottom: 1px solid #ddd; position: relative; word-break: keep-all;}
+#section_box_sub .snb ul {max-width: 1200px; display: flex; justify-content: center; margin: 0 auto; }
+#section_box_sub .snb ul li {font-size: 18px;}
+#section_box_sub .snb ul li a {padding: 10px 2.6vw; display: block; border-right: 1px solid #ddd; }
+#section_box_sub .snb ul li a:hover {color: #8b4f00}
+#section_box_sub .snb ul li:last-child a {border: 0;}
+#section_box_sub .snb ul li.on {}
+#section_box_sub .snb .snb_line {position: absolute;  height: 2px; background: #000; transition: 0.3s; left: 0; }
+
+
+#section_box_sub .content {padding: 6.25vw 0;}
+
+#section_box_sub .centerbox1200 {display: flex; gap: 50px;}
+
+
+
+
+
+
+/* 회사소개 */
+.company .text_box {flex-basis: 410px; }
+.company .text_box .ex {font-size: 20px; color: #786c5c; display: block; margin-bottom: 33px;}
+.company .text_box strong {font-size: 60px; font-weight: lighter; display: block; margin-bottom: 33px;}
+.company .text_box p {font-size: 22px;}
+
+.company .img_box {flex-basis: 740px; position: relative; display: flex; justify-content:flex-end;}
+
+.company .img_box figure.img1 {width: 250px; height: 400px; position: absolute; border: 5px solid #fff; left: 0; top: 40px; box-shadow: 0 0 10px rgba(0,0,0,0.2); overflow: hidden;}
+.company .img_box figure.img1 img {height: 100%;}
+
+.company .img_box figure.img2 {width: 550px; height: 100%; border: 5px solid #fff; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+.company .img_box figure.img2 img {height: 100%;}
+
+
+/* CEO 인사말 */
+.greeting .text_box p {border: 1px solid #000;}
+
+
+/* 오시는길 */
+.direct_box {width:calc(100vw - 40px);}
+
+
+
+/* 로그인 */
+.login_page {width: 100%;}
+.login_page .centerbox1200 {justify-content: center;}
+.login_page .login_box {width: 500px; display: flex; flex-direction: column; align-items: center;;}
+.login_page .login_box ul {width: 100%;}
+.login_page .login_box ul li {margin-bottom: 14px; position: relative;}
+.login_page .login_box li input[type="text"],
+.login_page .login_box li input[type="password"] {width: 100%; border: 1px solid #ddd; border-radius: 50px; font-size: 18px; text-indent: 20px; height: 50px;}
+.login_page .login_box ul li .view_pw {position: absolute; right: 20px; top: 13px; cursor: pointer;}
+.login_page .login_box ul li .hide_pw {position: absolute; right: 20px; top: 13px; display: none; cursor: pointer;}
+
+.login_page .login_box li.idcheck {display: flex;align-items: center; gap: 10px;}
+.login_page .login_box li input[type="checkbox"] {width: 20px;height: 20px;}
+
+.btn1 {padding: 15px 75px; background: #414141; border-radius: 50px; color: #fff; font-size: 16px; margin-top: 50px;}
+
+.login_page .login_box .link_box {height: 50px; display: flex;align-items: center; gap: 40px; }
+
+.login_page .login_box .link_box a {position: relative;}
+.login_page .login_box .link_box a:before {content: ""; width: 4px; height: 4px; border-radius: 50%; background: #444; position: absolute; left: -8px; top: 40%;}
+
+.login_page .login_box li span.check {width: 24px; height: 24px; border: 1px solid #aaa; border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color: #aaa;}
+
+.login_page .login_box li.idcheck label {width: 100%;}
+
+.login_page .login_box li input[type="checkbox"]:checked ~ label span.check {border: 1px solid crimson;; color: #fff; background: crimson;}
+
+.login_page .login_box li input[type="checkbox"] {display: none;}
+
+
+
+
+/* 회원가입 */
+.join_page {width: 100%;}
+.join_page .centerbox1200 {justify-content: center;}
+.join_page .centerbox1200 form {width: 800px;}
+.join_page .join_box li {display: flex; align-items: center; margin-bottom: 30px;}
+.join_page .join_box li label {width: 200px; flex-shrink: 0;}
+.join_page .join_box li label.pilsu:after {content:"*";color: red; margin-left: 5px;}
+.join_page .join_box li .input_wrap {flex-grow: 1;}
+
+
+.join_page .join_box li input:not([type="file"]) {width: 100%; border: 1px solid #ddd; border-radius: 50px; font-size: 18px; text-indent: 20px; height: 50px;}
+
+.join_page .join_box li input[type="radio"] {width: 20px; height: 20px;}
+
+.join_page .join_box .btn_box {display: flex; justify-content: center;}
+
+.join_page .join_box .gender {display: flex;}
+.join_page .join_box .input_wrap label {width: auto; display: inline-flex; gap: 10px; align-items: center; margin-right: 20px;} 
+.join_page .join_box li input[type='checkbox'] {width: 20px; height: 20px;} 
+
+.join_page .join_box li select {cursor: pointer;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cfd0d3;
+    border-radius: 50px;
+    background: url(/images/icon_arrow_down.png) no-repeat center right 16px;
+    background-size: 30px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #1e1e1e;}
+
+
+.join_page .join_box li input[type='file'] {display: none;}
+.join_page .join_box li input[type='file'] ~ label{border-radius: 50px; padding: 0 30px; height: 50px; background: #8b4f00; color: #fff;}
+
+
+.join_page .join_box li .member_rule {border: 1px solid #ddd; white-space: pre-wrap; height: 300px; position: relative; overflow: auto; width: 100%; font-size: 0;}
+.join_page .join_box li .member_rule .rule {overflow: auto; height: 100%; position: absolute; width: 100%; top: 0; left: 0; padding: 12px 16px; font-size: 16px;}
+
+  /* 스크롤바의 폭 너비 */
+  .rule::-webkit-scrollbar {
+      width: 5px;  
+  }
+  
+  .rule::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 1); /* 스크롤바 색상 */
+      border-radius: 10px; /* 스크롤바 둥근 테두리 */
+  }
+  
+  .rule::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);  /*스크롤바 뒷 배경 색상*/
+  }
+
+
+.join_page .join_box li .member_rule textarea {height: 100%;width: 100%; top: 0; left: 0; padding: 12px 16px; font-size: 16px; resize: none;}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .company .text_box .ex {margin-bottom: 3vw;}
+    .company .text_box strong {font-size: 4.2vw;margin-bottom: 3vw;}
+    .company .text_box p {font-size: 2vw;}
+
+    .company .img_box figure.img2 {width:400px; height: 450px; }
+}
+@media screen and (max-width: 768px) {
+    .mo_menu.sub {border: 1px solid #222;}
+    .mo_menu.sub span {background: rgba(34,34,34,1);}
+    .mo_menu.sub span::before,
+    .mo_menu.sub span::after {background: #222;}
+
+    .mo_menu.sub.on {border: 1px solid #fff;}
+    .mo_menu.sub.on span {background: rgba(34,34,34,0)}
+    .mo_menu.sub.on span::before,
+    .mo_menu.sub.on span::after {background: #fff;}
+
+
+    .company .centerbox1200 {flex-direction: column;}
+    .company .text_box {flex-basis: 0;}
+    .company .img_box {flex-basis: 0;}
+    
+    .company .text_box strong {font-size: 30px;}
+    .company .text_box p {font-size: 16px;}
+
+    .company .img_box figure.img1 {width:auto; height: 60vw; }
+
+    /* login */
+    .login_page form {width: 80%; }
+    .login_page .login_box {width: 100%; }
+    
+    .login_page .login_box li input[type="text"]::placeholder,
+    .login_page .login_box li input[type="password"]::placeholder {font-size: 14px;}
+
+
+    /* join */
+    .join_page .join_box li label {width:120px}
+}
+
+@media screen and (max-width: 520px) {
+    #visual_sub .sub_text {letter-spacing: 1vw;}
+
+    #section_box_sub .snb ul {flex-wrap: wrap; }
+    #section_box_sub .snb ul li {width: 30%; text-align: center;}
+    #section_box_sub .snb ul li a {border: 0}
+
+    .company .img_box {justify-content: center;}
+    .company .img_box figure.img1 {display: none;}
+    .company .img_box figure.img2 {width: calc(100vw - 40px); height: 75vw;}
+
+    /* join */
+    .join_page .join_box li {flex-direction: column;}
+    .join_page .join_box li label {width: 100%;}
+    .join_page .join_box li .input_wrap {width: 100%;}
+}
